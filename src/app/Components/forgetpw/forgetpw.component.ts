@@ -7,6 +7,8 @@ import { FormBuilder,FormControl,FormGroup,Validators } from '@angular/forms';
   templateUrl: './forgetpw.component.html',
   styleUrls: ['./forgetpw.component.scss']
 })
+// <!-- <this is forget password Component.ts page> -->
+
 export class ForgetpwComponent implements OnInit{
   constructor(private formbuilder:FormBuilder,private userservice:UserService){}
   ngOnInit(): void {
