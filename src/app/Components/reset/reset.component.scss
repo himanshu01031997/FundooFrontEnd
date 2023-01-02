@@ -1,0 +1,55 @@
+.outercontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:100px;
+}
+.Heading{
+    display: flex;
+    //justify-content: left;
+    position: relative;
+    // left: 20px;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+.met{
+    height: 450px;
+    width:400px;
+}
+.sideheading{
+    display: flex;
+    justify-content: center;
+    position:relative;
+    right: -10px;}
+
+.myfirst{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+
+    position:relative;
+    right: -65px;
+
+}    
+.mysecond{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+
+    position:relative;
+    right: -65px;
+}
+.SavePassword{
+    position: relative;
+    right: -230px;
+    bottom: 5%;
+}
+.checkbox{
+    position: relative;
+    right: -50px;
+}
+.button{
+    position: relative;
+    bottom: -20px;
+}

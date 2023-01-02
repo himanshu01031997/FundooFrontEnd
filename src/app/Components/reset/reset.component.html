@@ -1,0 +1,46 @@
+<div class="outercontainer">
+    <mat-card class="met">
+<div class="Heading">
+    <h1>
+        <span style="color: blue;">F</span>
+        <span style="color: red;">U</span>
+        <span style="color: yellow;">N</span>
+        <span style="color: blue;">D</span>
+        <span style="color: green;">O</span>
+        <span style="color: red;">O</span>
+    </h1>
+</div>
+<div>
+    <h2 class="sideheading">Change Password</h2>
+</div>
+<div>
+    <h4 class="sideheading">Create a strong password</h4>
+</div>
+<form class="myclass" [formGroup]="Resetpwform" (ngSubmit)="resetpwSubmit()">
+    <div>
+        <mat-form-field class="myfirst" appearance="outline">
+            <mat-label class>Password</mat-label>
+            <input matInput [type]="showpassword ? 'text':'password'" matInput placeholder="password" formControlName="password" >
+            <mat-error>create new password</mat-error>
+        </mat-form-field>
+        <mat-form-field class="mysecond" appearance="outline">
+            <mat-label class>Confirm-Password</mat-label>
+            <input matInput [type]="showpassword ? 'text':'password'" matInput placeholder="confirm-password" formControlName="confirmPassword">
+            <mat-error>confirm password</mat-error>
+        </mat-form-field>
+        
+    </div>
+    <div class="checkbox">              
+        <mat-checkbox matSuffix (click)="togglepasswordvisibility()" color="primary">Show password</mat-checkbox>                 
+    </div>
+    <div class="button">
+        <button  mat-button color="primary">Skip </button>
+
+    </div>
+    <div class="SavePassword">
+        <button  mat-raised-button color="primary">Change password</button>
+    </div>
+</form>
+
+    </mat-card>
+</div>

@@ -1,0 +1,49 @@
+.closebutton{
+    position: relative;
+    right: -20px;
+    bottom: 8px;
+    font-size: medium;
+}
+.myiconf{
+    text-align: center;
+
+    size: 20rem;  
+}
+.refresh{
+    transform:scale(0.6);
+}
+.myimg{
+    size: 1rem;
+}
+.refresh1{
+    font-size: 10px;
+    
+}
+.refreshvert{
+    position: relative;
+    right: 10px;
+    transform:scale(0.6);
+    font-size: small;
+    height: 1px;
+    bottom:8px;
+}
+.revert{
+    color: white;
+    width: 1px;
+font-size: small;
+position: relative;
+// transform:scale(0.6);///
+
+top: -10px;
+    
+  }
+  .plt{
+    height: 40px;
+    width: 40px;
+  }
+  .colourbtn{
+    flex-direction: row;
+
+  }
+
+  

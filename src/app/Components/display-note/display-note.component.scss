@@ -1,0 +1,34 @@
+.card{
+    display: flex;
+    display: table-row;
+    position: relative;
+    align-items: center;
+}
+.notescontainer{
+//     position: relative;
+//     width: 150px;
+//     right: -250px;
+display: flex;
+width: 320px;
+height: 150px;
+position: relative;
+right: -100px;
+margin-bottom: 20px;
+margin-right: 20px;
+flex-direction: column;
+}
+.title{
+    display: flex;
+    position: relative;
+    right: -10px;
+    
+}
+.refresh{
+    position: relative;
+    right: -180px;
+}
+.allicon{
+position: relative;
+bottom: -40px;
+size: 10px;
+}

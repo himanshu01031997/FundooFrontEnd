@@ -1,0 +1,16 @@
+<div *ngFor="let mynotes of notelist" class="card">
+    <mat-card class="notescontainer" [style.background]="mynotes.color">
+        <mat-card-title class="title" mat-input  (click)="editnotedialoguebox(mynotes)">{{mynotes.title}}
+            <button class="refresh" mat-icon-button >
+                <img src="../../../assets/push_pin_FILL0_wght400_GRAD0_opsz48 (1).svg"/>
+            </button>
+        </mat-card-title>
+        <mat-card-content>
+            <div role="textbox" class="mytext" (click)="editnotedialoguebox(mynotes)">{{mynotes.body}}</div>
+            <div>{{mynotes.NoteId}}</div>
+        </mat-card-content>
+        <div class="allicon" >
+            <app-icon   [notesObjects]="mynotes" (refreshEvent)="receiverefreshevent($event)"></app-icon>
+        </div>
+    </mat-card>
+</div>

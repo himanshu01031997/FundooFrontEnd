@@ -1,0 +1,48 @@
+<!-- <button>
+   <img class="myiconf" src="../../../assets/add_alert_FILL0_wght400_GRAD0_opsz48.svg"/>
+   <img class="myiconf" src="../../../assets/person_add_FILL0_wght400_GRAD0_opsz48.svg"/>
+   <img class="myiconf" src="../../../assets/palette_FILL0_wght400_GRAD0_opsz48.svg"/>
+   <img class="myiconf" src="../../../assets/imagesmode_FILL0_wght400_GRAD0_opsz48.svg"/>
+   <img class="myiconf" src="../../../assets/archive_FILL0_wght400_GRAD0_opsz48.svg"/>
+   <img class="myiconf" src="../../../assets/more_vert_FILL0_wght400_GRAD0_opsz48.svg"/>
+
+
+
+</button> -->
+
+
+<div class="allbutton">
+    <button  mat-icon-button  class="refresh">
+        <img class="myiconf" src="../../../assets/add_alert_FILL0_wght400_GRAD0_opsz48.svg"/>
+    </button> 
+     <button class="refresh" mat-icon-button >
+        <img src="../../../assets/person_add_FILL0_wght400_GRAD0_opsz48.svg"/>
+     </button>
+     <button class="refresh" mat-button >
+        <img class="plt" [matMenuTriggerFor]="palletmenu" src="../../../assets/palette_FILL0_wght400_GRAD0_opsz48.svg"/>
+      </button> 
+      <button class="refresh" mat-icon-button >
+        <img src="../../../assets/imagesmode_FILL0_wght400_GRAD0_opsz48.svg"/>
+      </button> 
+      <button class="refresh" mat-icon-button  (click)="Archievedo()">
+       <img src="../../../assets/archive_FILL0_wght400_GRAD0_opsz48.svg"/>
+      </button> 
+      <button  class="revert"  [matMenuTriggerFor]="menu" mat-button >
+        <img src="../../../assets/more_vert_FILL0_wght400_GRAD0_opsz48.svg">
+      </button>
+      <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="ondelete()">Delete</button>
+      <button mat-menu-item>add-label</button>
+      <button mat-menu-item>add-drawing</button>
+      <button mat-menu-item>make a copy</button>
+      <button mat-menu-item>copy to google docs</button>
+      </mat-menu>
+
+
+    <mat-menu #palletmenu="matMenu">
+      <div *ngFor="let color of colourarray">
+        <button mat-icon-button [style.background]=color.code class="colourbtn" (click)="selectcolor(color)"></button>
+      </div>
+    </mat-menu>
+  </div>  
+  

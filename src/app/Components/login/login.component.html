@@ -1,0 +1,39 @@
+<!-- <p>this is login page  html</p> -->
+<div class="outercontainer">
+    <mat-card class="met">
+<div class="Heading">
+<span class="head" style="color:blue">F</span>
+<span class="head" style="color:red">U</span>
+<span class="head" style="color:yellow">N</span>
+<span class="head" style="color:green">D</span>
+<span class="head" style="color:blue">O</span>
+<span class="head" style="color:red">O</span>
+</div>
+
+<div>
+<h3 class="sideheading">Sign in</h3>
+</div>
+<div>
+    <h4 class="secondhead">Continue to FundooApp</h4>
+</div>
+<form class="details" [formGroup]="loginform" (ngSubmit)="loginSubmit()">
+    <div class="userlogindetail">
+        <mat-form-field appearance="outline">
+            <mat-label>Email or Phone</mat-label>
+            <input matInput placeholder="email or phone" formControlName="email" >           
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="password" formControlName="password" >
+          </mat-form-field>
+    </div>
+    <div class="forgetpw">
+        <a  routerLink="/forgetpass"  mat-button class="For" color="primary">Forget Email?</a>
+    </div>
+    <div class=" forget" >
+        <a routerLink="/register" mat-button class="createacc" color="primary">Create account</a>
+        <button class="nextbutton" mat-raised-button color="primary">Next</button>
+    </div>
+</form>
+</mat-card>
+</div>

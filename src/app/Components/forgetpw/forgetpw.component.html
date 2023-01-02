@@ -1,0 +1,33 @@
+<div class="outercontainer">
+    <mat-card class="met">
+<div class="Heading">
+    <h1>
+        <span style="color: blue;">F</span>
+        <span style="color: red;">U</span>
+        <span style="color: yellow;">N</span>
+        <span style="color: blue;">D</span>
+        <span style="color: green;">O</span>
+        <span style="color: red;">O</span>
+    </h1>
+</div>
+<div>
+    <h3 class="sideheading1">Find your email</h3>
+</div>
+<div>
+    <h4 class="sideheading2">Enter your phone number or recovery email</h4>
+</div>
+<form class="my-class" [formGroup]="Forgetpwform" (ngSubmit)="ForgetpwSubmit()">
+    <div>
+        <mat-form-field class="myfirst" appearance="outline">
+            <mat-label class>email</mat-label>
+            <input class="myinputt" matInput placeholder="email" formControlName="email">
+            <mat-error>add your email</mat-error>
+          </mat-form-field>
+    </div>
+    <div>
+        <button class="next" mat-raised-button color="primary">Next</button>
+    </div>
+</form>
+
+    </mat-card>
+</div>

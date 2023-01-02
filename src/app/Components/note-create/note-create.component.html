@@ -1,0 +1,32 @@
+      <div class="outercontainer">
+         <div *ngIf="display; then thenblock else elseblock"></div>
+         <ng-template #thenblock>
+            <div class="takeup">
+         <input class="title6"  type="text" placeholder="Title" (click)="clicktitle()">
+         <button class="notebutton" mat-icon-button >
+            <img src="../../../assets/check_box_FILL0_wght400_GRAD0_opsz48.svg"/>
+         </button> 
+         <button class="notebutton" mat-icon-button >
+            <img src="../../../assets/brush_FILL0_wght400_GRAD0_opsz48.svg"/>
+         </button>        
+         <button class="notebutton" mat-icon-button >
+            <img src="../../../assets/image_FILL0_wght400_GRAD0_opsz48.svg"/>
+         </button> 
+         </div>
+         </ng-template>
+         <ng-template #elseblock>
+            <form class="myform"  [formGroup]="createnoteform" (ngSubmit)="createnoteSubmit()">
+                <input class="title"  type="text" placeholder="Title" formControlName="Title" >
+                 <div>
+                <input class="title1"type="text" placeholder="Take a note" formControlName="Body" >
+                 </div>
+                <div>
+                  <app-icon></app-icon>
+                       <button mat-button class="closebutton">Close</button>
+               </div>
+            </form>
+      </ng-template>   
+      </div>
+      
+     
+     
