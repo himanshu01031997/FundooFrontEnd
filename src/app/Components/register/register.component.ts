@@ -8,6 +8,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss']
 })
+// <this is register components.ts>
 export class RegisterComponent implements OnInit {
   Submitted=false;
   public showpassword:boolean=false;
