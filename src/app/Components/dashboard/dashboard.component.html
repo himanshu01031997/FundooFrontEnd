@@ -8,7 +8,7 @@
     <!-- <button mat-icon-button  >
         <mat-icon>search</mat-icon>
     </button>  -->
-    <input  class="searchclass" placeholder="      Search"   type="text" >
+    <input  class="searchclass" placeholder="  Search"   type="text" >
     <!-- <button class="searchbutton">
         <img src="../../../assets/search_FILL0_wght400_GRAD0_opsz48 (1).svg"/>
     </button> -->
@@ -24,6 +24,12 @@
     <button class="appbutton" mat-icon-button >
         <img src="../../../assets/apps_FILL0_wght400_GRAD0_opsz48 (2).svg"/>
     </button>    
+    <button class="accbutton" [matMenuTriggerFor]="logoutmenu" mat-button>
+        <img src="../../../assets/person_FILL0_wght400_GRAD0_opsz48.svg">
+        <mat-menu #logoutmenu="matMenu" xPosition="before">
+            <button mat-menu-item (click)="logout()">Logout</button>
+        </mat-menu>
+    </button>
 </mat-toolbar-row>
  </mat-toolbar>
  <mat-sidenav-container>

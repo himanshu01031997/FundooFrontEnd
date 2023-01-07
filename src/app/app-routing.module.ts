@@ -11,6 +11,7 @@ import { LoginComponent } from './Components/login/login.component';
 import { NoteCreateComponent } from './Components/note-create/note-create.component';
 import { RegisterComponent } from './Components/register/register.component';
 import { ResetComponent } from './Components/reset/reset.component';
+import { ReviewComponent } from './Components/review/review.component';
 import { TrashComponent } from './Components/trash/trash.component';
 
 
@@ -20,6 +21,7 @@ const routes: Routes = [
   // {path:'forget',component:ForgetComponent},
   {path:'reset/:token',component:ResetComponent},
   {path:'forgetpass',component:ForgetpwComponent},
+  {path:'review',component:ReviewComponent},
   {path:'dashboard',component:DashboardComponent,canActivate:[AuthguardGuard],
   children:[
   {path:'',redirectTo:"/dashboard/getnote",pathMatch:'full'},

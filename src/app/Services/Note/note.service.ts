@@ -17,7 +17,7 @@ export class NoteService {
       'Authorization':'Bearer '+this.token
     })
   }
-  return this.httpservice.PostService(this.baseUrl+`Note/Create`,requestdata,true,header);
+  return this.httpservice.PostService(`https://localhost:44391/api/Note/Create`,requestdata,true,header);
   }
   getnote(){
     let header={
@@ -35,8 +35,9 @@ updatenote(data:any,noteId:any){
       'Authorization':'Bearer '+this.token
     })
 }
-return this.httpservice.PutService(this.baseUrl+`Note/Update?noteid=`+noteId,data,true,header)
+return this.httpservice.PutService(`https://localhost:44391/api/Note/Update?noteid=`+noteId,data,true,header)
 }
+
 trashnote(reqdata:any){
   console.log(reqdata)
   let header={

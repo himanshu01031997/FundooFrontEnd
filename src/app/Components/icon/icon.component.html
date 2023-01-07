@@ -27,10 +27,10 @@
       <button class="refresh" mat-icon-button  (click)="Archievedo()">
        <img src="../../../assets/archive_FILL0_wght400_GRAD0_opsz48.svg"/>
       </button> 
-      <button  class="revert"  [matMenuTriggerFor]="menu" mat-button >
-        <img src="../../../assets/more_vert_FILL0_wght400_GRAD0_opsz48.svg">
+      <button    mat-button >
+        <img class="revert" [matMenuTriggerFor]="menu" src="../../../assets/more_vert_FILL0_wght400_GRAD0_opsz48.svg">
       </button>
-      <mat-menu #menu="matMenu">
+      <mat-menu #menu="matMenu" xPosition="before">
       <button mat-menu-item (click)="ondelete()">Delete</button>
       <button mat-menu-item>add-label</button>
       <button mat-menu-item>add-drawing</button>
@@ -39,7 +39,7 @@
       </mat-menu>
 
 
-    <mat-menu #palletmenu="matMenu">
+    <mat-menu #palletmenu="matMenu" xPosition="before">
       <div *ngFor="let color of colourarray">
         <button mat-icon-button [style.background]=color.code class="colourbtn" (click)="selectcolor(color)"></button>
       </div>

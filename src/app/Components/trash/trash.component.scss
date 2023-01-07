@@ -1,13 +1,14 @@
 .notescontainer{
 display: flex;
+flex-direction: column;
+
 width: 280px;
 height: 150px;
 position: relative;
 right: -100px;
-margin-top: 80px ;
+margin-top: 60px ;
 margin-bottom: 20px;
 margin-right: 20px;
-flex-direction: column;
 }
 .allbutton{
     position: relative;
@@ -16,6 +17,13 @@ flex-direction: column;
     left: 20px;
 
 }
+.card{
+    display: flex;
+    flex-direction: column;
+    display: table-row;
+
+}
+
 .titlecls{
 display: flex;
 position: relative;

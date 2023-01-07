@@ -8,6 +8,7 @@ import { HttpService } from '../Http/http.service';
 })
 export class UserService {
   baseUrl='https://localhost:44391/api/';
+  
   token:any;
 
   constructor(private httpservice:HttpService) { }
@@ -17,7 +18,7 @@ export class UserService {
         'Content-Type':'application/json'
       })
     }
-    return this.httpservice.PostService(this.baseUrl+`User/Login/${data.email}/${data.password}`,data,false,header)
+    return this.httpservice.PostService(`https://localhost:44391/User/Login/${data.email}/${data.password}`,data,false,header)
   }
   Register(requestdata:any){
     let header={
@@ -25,7 +26,7 @@ export class UserService {
         'Content-Type':'application/json'
       })
     }
-    return this.httpservice.PostService(this.baseUrl+`User/Register`,requestdata,false,header)
+    return this.httpservice.PostService(`https://localhost:44391/User/Register`,requestdata,false,header)
   }
   forgetpww(forg:any){
     let header={
@@ -33,7 +34,7 @@ export class UserService {
         'Content-Type':'application/json'
       })
     }
-    return this.httpservice.PostService(this.baseUrl+`User/ForgetPassword?email=`+forg.email,{},false,header)
+    return this.httpservice.PostService(`https://localhost:44391/User/ForgetPassword?email=`+forg.email,{},false,header)
   }
   Reset(reqdata:any,token:any){
     console.log("resettoken",token);
@@ -43,6 +44,7 @@ export class UserService {
         'Authorization':'Bearer '+token
       })
   }
-  return this.httpservice.PutService(this.baseUrl+`User/ResetPassword?password=`+reqdata.password+'&confirmpassword='+reqdata.confirmPassword,{},true,header)
+  return this.httpservice.PutService(`https://localhost:44391/User/ResetPassword?password=`+reqdata.password+'&confirmpassword='+reqdata.confirmPassword,{},true,header)
 }
+
 }

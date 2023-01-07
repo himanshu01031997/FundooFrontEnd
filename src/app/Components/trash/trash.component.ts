@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { NoteService } from 'src/app/Services/Note/note.service';
 
 @Component({
@@ -9,6 +9,7 @@ import { NoteService } from 'src/app/Services/Note/note.service';
 export class TrashComponent implements OnInit{
   trashlist:any
   constructor(private notes:NoteService){}
+
 ngOnInit(): void {
   this.createnoteSubmit()
 }

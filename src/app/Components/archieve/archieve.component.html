@@ -1,1 +1,5 @@
-<app-display-note [notelist]="archievelist"></app-display-note>
+<br>
+<br>
+<div >
+    <app-display-note [notelist]="archievelist" class="container" (displayEvent)="displayMessage($event)"></app-display-note>
+</div>

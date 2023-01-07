@@ -10,7 +10,7 @@
             <div>{{mynotes.NoteId}}</div>
         </mat-card-content>
         <div class="allicon" >
-            <app-icon   [notesObjects]="mynotes" (refreshEvent)="receiverefreshevent($event)"></app-icon>
+            <app-icon   [notesObjects]="mynotes" (refreshEvent)="receiverefreshevent($event)" (displayEvent)="displayMessage($event)"></app-icon>
         </div>
     </mat-card>
 </div>

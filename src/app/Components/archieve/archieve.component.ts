@@ -21,4 +21,7 @@ export class ArchieveComponent implements OnInit {
       console.log(this.archievelist);
     })
   }
+  displayMessage($event:any){
+    this.createnoteSubmit();
+  }
 }

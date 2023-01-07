@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component ,} from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent {
+  constructor(private route:Router){}
 opened=false;
+logout(){
+  localStorage.removeItem("token")
+  this.route.navigateByUrl("/login");
+}
 }

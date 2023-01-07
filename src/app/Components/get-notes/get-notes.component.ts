@@ -41,5 +41,5 @@ export class GetNotesComponent implements OnInit{
   console.log("createnote to getallnotes"+$event)
   this.createnoteSubmit();
   }
-
+  
 }

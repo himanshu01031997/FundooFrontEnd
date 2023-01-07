@@ -15,7 +15,6 @@ export class DisplayNoteComponent implements OnInit{
   message:any;
   @Input() notelist:any;
   @Output() updateAutoRefresh=new EventEmitter<string>();
-
 ngOnInit(): void {
   this.data.incomingData.subscribe((response)=>{
    console.log(response);
@@ -37,6 +36,9 @@ receiverefreshevent($event:any){
  console.log("icon to display"+$event);
  this.message=$event;
  this.refresheventformdisplaytogetAll.emit(this.message);
+}
+displayMessage($event:any){
+  console.log("hello")
 }
 
 }

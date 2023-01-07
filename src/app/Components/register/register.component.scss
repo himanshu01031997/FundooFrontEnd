@@ -48,17 +48,7 @@
     //left: 20px;
     bottom: 20px;
 }
-.firstn{
-    // padding: 30px;
-    // justify-content: space-between;
-}
-// .a_class{
-//     display: flex;
-//     position: relative;
-//     top: 50px;
-//     right: 100px;
-    
-// }
+
 .ThirdMain{
     display: flex;
     justify-content: space-between ;
@@ -118,4 +108,84 @@
     position: relative;
     bottom: 200px;
     left: 240px;
+}
+@media screen and (max-width: 746px){
+    .image{
+        display: none;
+    }
+    .hint{
+        display: none;
+    }
+    .Header{
+        display: flex;
+        position: relative;
+        height: 500px;
+        width: 380px;
+        
+    }
+    .Container{
+        display: flex;
+        position: relative;
+        top: 40px;
+    }
+    .secondhead{
+        font-size: medium;
+    }
+    .Logo-name{
+        position: relative;
+        right: 250px;
+    }
+    .inputfirst{
+        position: relative;
+        right: 100px;
+    }
+    // .name{
+    //     position: relative;
+    //     right: -60px;
+    // }
+    .ThirdMain{
+        display: flex;
+        position: relative;
+        right: -20px;
+        width:310px;
+        border-width: 70px;
+        
+    }
+    .name{
+        display: flex;
+        position: relative;
+        width: 300px;
+        right:-20px;
+
+        
+    }
+    .Main{
+         position: relative;
+         
+    }
+    .SecMain{
+        display: flex;
+        position: relative;
+        right: -20px;
+        width:500px;
+        
+    }
+    .demo{
+        font-size: small;
+    }
+    .next{
+        position: relative;
+        left:137px;
+    }
+    .b_class{
+        font-size: x-small;
+        position: relative;
+        border-top: 20px;
+        right: -20px;
+    }
+    .demo{
+        position: relative;
+        right:-20px;
+    }
+   
 }
